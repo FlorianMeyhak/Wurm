@@ -3,6 +3,7 @@ float mingroß = 20;
 String direction = "up";
 
 void setup() {
+  background(0);
   size(1920, 1080);
   noStroke();
   fill(255, 153, 200);
@@ -12,7 +13,7 @@ float groß = 33;
 boolean sizechange = false;
 
 void draw() {
-  background(126);
+  
   circle(mouseX, mouseY, groß);
   
 if (sizechange == true){
@@ -27,6 +28,9 @@ if (sizechange == true){
       direction = "up";
     }
   }
+}
+if (keyPressed){
+ background(0) ;
 }
 }
 
